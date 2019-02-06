@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- title -->
+    <title>Pig Game</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+
+    <!-- JS -->
+    <script src="script.js"></script>
+    <!-- icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Raleway" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- main wrapper -->
+<div class="wrapper clear-fix">
+    <div class="player1-panel active">
+        <div class="player-name" id="player1">Player 1</div>
+
+        <div class="player-score" id="score-1">0</div>
+        <div class="player-current-box">
+            <div class="player-current-label">Current</div>
+            <div class="player-current-score" id="currentScore-1">11</div>
+        </div>
+    </div>
+
+        <div class="player2-panel">
+            <div class="player-name" id="player2">Player 2</div>
+            <div class="player-score" id="score-2">0</div>
+
+            <div class="player-current-box">
+                <div class="player-current-label">Current</div>
+                <div class="player-current-score" id="currentScore-2">0</div>
+            </div>
+        </div>
+        <button class="btn-new"><i class="material-icons">
+                help</i>Help</button>
+        <button class="btn-newGAme"><i class="material-icons">
+                add_circle_outline
+            </i>New Game</button>
+        <button class="btn-rollDice"><i class="material-icons">
+                autorenew</i>Roll dice</button>
+        <button class="btn-hold"><i class="material-icons">
+                play_for_work</i>Hold</button>
+
+        <input type="text" placeholder="Goal" class="finalScore">
+        <img src="images/dice-5.png" atl="dice" class="dice" id="dice1">
+        <img src="images/dice-5.png" atl="dice" class="dice" id="dice2">
+
+</div>
+</body>
+
+</html>
