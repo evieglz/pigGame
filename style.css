@@ -5,7 +5,7 @@ body{
     color: rgba(43, 6, 30, 1);
     background-size: cover;
     background-position: center;
-    font-family:'Fredericka the Great', cursive;
+    font-family: 'News Cycle', sans-serif;
     font-weight: 300;
     position: realtive;
     height: 100vh;
@@ -30,7 +30,7 @@ body{
     top: 520px;
     color: rgba(43, 6, 30, 1);
     font-size: 18px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'News Cycle', sans-serif;
     text-align: center;
     padding: 10px;
     width: 160px;
@@ -75,11 +75,126 @@ body{
     text-transform: uppercase;
     font-weight: 100;
     margin-top: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    font-family: 'Fredericka the Great', cursive;
 }
 
+.player-score{
+    text-align:center;
+    font-size: 90px;
+    font-family: 'News Cycle', sans-serif;
+    color: rgba(117, 79, 91, 1);
+    margin-bottom: 130px;
+}
+
+.active{
+    background-color: rgba(231, 207, 188, 1);
+}
+
+.active .player-name::after{
+    content: "\2297";
+    font-size: 50px;
+    position: absolute;
+    color: rgba(117, 79, 91, 1);
+}
+
+.player-current-box{
+    background-color: rgba(125, 97, 103, 1);
+    color: rgba(255, 244, 236, 1);
+    width: 130px;
+    height: 110px;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.player-current-label{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: rgba(43, 6, 30, 1);
+}
+
+.player-current-score{
+    font-size: 30px;
+}
 /* BUTTON */
+
+button{
+    position: absolute;
+    width: 220px;
+    left: 50%;
+    transform: translate(-50%);
+    color: rgba(43, 6, 30, 1);
+    background: none;
+    border: none;
+    font-family: 'News Cycle', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 300;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover{
+    font-weight:600;
+}
+button:hover i{
+    margin-right: 30px;
+}
+
+button:focus{
+    outline:none;
+}
 
 /* ICON */
 
-/* DICE */
+i{
+    color: rgba(117, 79, 91, 1);
+    display: inline-block;
+    margin-right:  10px;
+    font-size: 20px;
+    line-height: 2;
+    vertical-align: text-top;
+    margin-top:10px;
+    transition: margin 0.3s;
+}
+
+.btn-rules{
+    top: 20px;
+}
+
+.btn-newGame{
+    top: 65px;
+}
+
+.btn-rollDice{
+    top: 400px;
+}
+
+.btn-hold{
+    top: 450px;
+}
+
+/* ICON */
+
+.dice{
+    position: absolute;
+    left: 50%;
+    top: 180px;
+    transform: translate(-50%);
+    height: 110px;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
+}
+
+.winner{
+    background-color: rgba(231, 207, 188, 1);
+}
+
+.winner .player-name{
+    font-weight: 300px;
+    color: rgba(125, 97, 103, 1);
+
+}
 
