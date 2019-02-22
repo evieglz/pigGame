@@ -42,10 +42,12 @@ body{
 
 #dice1 {
     top: 120px;
+    display: none;
 }
 
 #dice2{
     top: 250px;
+    display: none;
 }
 
 *{
@@ -98,7 +100,7 @@ body{
     position: absolute;
     color: rgba(117, 79, 91, 1);
 }
-2
+
 .player-current-box{
     background-color: rgba(125, 97, 103, 1);
     color: rgba(255, 244, 236, 1);

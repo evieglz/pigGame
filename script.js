@@ -1,11 +1,8 @@
-/*how the game works: 
-1. A player
+var scores = [0,0];
+var roundScore =0;
+var activePlayer =0;
 
-*/
-var score;
-var roundScore;
-var activePlayer;
-var gamePlaying;
-var lastDice;
+// dice
+var dice = Math.floor(Math.random()* 6 +1);
 
-init();
+console.log(dice);
